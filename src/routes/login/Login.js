@@ -23,6 +23,7 @@ class Login extends Component {
   }
 
   submitAction = (e) => {
+    e.preventDefault();
     this.props.queueNotification({
       text: 'Uh Oh! Please Try Again Later'
     })
